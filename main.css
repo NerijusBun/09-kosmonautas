@@ -62,16 +62,30 @@ span{
 
 p{}
 
-div>a{ border: solid 1px;
-    border-radius: 50px;
+div>a{ 
+    border-radius: 1.6em;
     background-color: #662C8C;
+    float: left;
     color: white;
     text-decoration: none;
-    padding: 40px;
-    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1em;
+    padding: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    margin: 0.5em;
+    margin-left: 0;
+    border: 0.1em solid #662C8C;
 
-    
-}
+    }
+
+    div>a:hover {
+        background-color: white;
+        color: #662C8C;
+        
+    }
 
 main>img{
     width: 60%;
