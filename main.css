@@ -3,66 +3,69 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header,
-main,
-footer {
+.container {
     margin-left: calc(50% - 400px); 
     width: 800px;
 }
 
-header{
+.main-header {
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 40px;
-    
-    }
-header>img{
+}
+
+.logo {
     height: 40px;
     width: 100px;
     object-fit: contain;
     object-position: left;
-    
+   
 }
 
-nav{ 
+.main-nav { 
     display: flex;
     gap: 30px;
-    }
+}
 
-a{  color: black; 
+.main-nav> .link {
+    color: black; 
     font-size: 20px;
-    text-decoration: none;
-    
- }
+    text-decoration: none;   
+}
 
-nav>a:hover{ 
+.main-nav> .link:hover { 
     text-decoration: underline;
 }    
 
-main{ 
+.main-content { 
+    display: flex;
     margin-bottom: 40px;
     align-items: center;
-    display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 
-div{ 
+.left-column { 
     width: 40%;
     
 }
 
-h1{}
-
-span{ 
-    font-weight: normal;
+.title {
+    font-size: 40px;
 }
 
-p{}
+.title>span { 
+    font-weight: normal;
+    display: block;
+}
 
-div>a{ 
+.description {
+}
+
+.btn { 
     border-radius: 1.6em;
     background-color: #662C8C;
     float: left;
@@ -78,18 +81,33 @@ div>a{
     margin: 0.5em;
     margin-left: 0;
     border: 0.1em solid #662C8C;
+}
 
-    }
+.btn:hover {
+    background-color: white;
+    color: #662C8C;
+}
 
-    div>a:hover {
-        background-color: white;
-        color: #662C8C;
-        
-    }
-
-main>img{
+.main-image {
     width: 60%;
 }
 
-footer{
-    background-color: rgb(182, 119, 176);
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials { 
+    display: flex;
+    gap: 1em; 
+}
+
+.social-link {
+    font-size: 30px;
+    color: #cbcccc;  
+}
+
+.copyright {
+    margin: 0;  
+}
