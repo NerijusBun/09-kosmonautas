@@ -62,7 +62,12 @@ body{
     display: block;
 }
 
-.description {
+.title::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #662C8C;
 }
 
 .btn { 
