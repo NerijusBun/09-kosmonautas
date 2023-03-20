@@ -110,7 +110,8 @@ body{
 
 .social-link {
     font-size: 30px;
-    color: #cbcccc;  
+    color: #cbcccc;
+    text-decoration: none;  
 }
 
 .copyright {
